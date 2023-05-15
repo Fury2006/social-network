@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'opensans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('opensans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+
+
+.App {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+
+.preloader {
+  width: 30px;
+}

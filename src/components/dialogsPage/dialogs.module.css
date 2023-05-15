@@ -1,0 +1,164 @@
+.search {
+    background-color: #242F3D;
+    width: 100%;
+    letter-spacing: 0.4px;
+    height: 34px;
+    border-radius: 3px;
+    font-family: opensans;
+    font-size: 12px;
+    color: white;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    padding: 2px 0 3px 12px;
+}
+
+.search:hover {
+    cursor: text;
+}
+
+.search::placeholder {
+    transition: color 2s;
+    color:#6D7883;
+    user-select: none;
+}
+
+.search:focus::placeholder{
+    transition: color 0.5s;
+    color:#46505E;
+}
+
+.dialogsBody {
+    background-color: #17212B;
+    height: 100vh;
+    border-right: 0.5px solid #0A121B;
+    min-width: 235px;
+}
+
+.dialogs {
+    background-color: #17212B;
+    height: 100%;
+    min-width: 235px;
+    overflow: hidden;
+}
+
+.dialogs:hover {
+    overflow: scroll;
+}
+
+.dialogs::-webkit-scrollbar {
+    width: 5px;
+    margin-right: 10px;
+}
+
+.dialogs::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background-color: #293038;
+}
+
+.dialogs::-webkit-scrollbar-thumb {
+    background-color: #54595F;
+    border-radius: 10px;
+}
+
+.dialogs::-webkit-scrollbar-track:hover {
+    background-color: #2D343C;
+}
+
+.dialog {
+    background-color: #17212B;
+    max-height: 60px;
+    min-height: 60px;
+    min-width: 235px;
+    height: 100vh;
+    user-select: none;
+    text-decoration: none;
+    color: white;
+    border-right: 0.5px solid #0A121B;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'avatar name lastActivityTime'
+    'avatar lastMessage lastMessage';
+}
+
+.dialog:focus {
+    background-color: #2B5278;
+}
+
+.dialog:focus:hover {
+    background-color: #2B5278;
+}
+
+.dialog:hover {
+    background-color: #212B35;
+    cursor: pointer;
+}
+
+.dialogLastMessage {
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #7F9191;
+    max-height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+    width: max-content;
+    max-width: 180px; 
+    grid-area: lastMessage;
+}
+
+.lastActivityTime {
+    color: #8696A8;
+    font-family: 'opensans';
+    font-size: 13px;
+    margin-top: 8px;
+    grid-area: lastActivityTime;
+}
+
+.dialogName {
+    font-family: 'Spot Mono', monospace;
+    letter-spacing: -0.8px;
+    grid-area: name;
+}
+
+.dialogAvatar {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    grid-area: avatar;
+    padding: 5px 0 0 5px;
+}
+
+.dialogAvatar img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.dialogsHead {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 54px;
+    width: 100%;
+    padding: 10px 13px 0 0;
+}
+
+.tripleDash img {
+    width: 30px;
+    margin: 4px auto 0 15px;
+    user-select: pointer;
+}
+
+.tripleDash {
+    display: inline-block;
+}
+
+.preloader {
+    position: absolute;
+    margin: 0 auto;
+}
